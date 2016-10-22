@@ -33,7 +33,7 @@ namespace SklepInternetowy.Models
 
         List<PozycjaZamowienia> PozycjaZamowienia { get; set; }
     }
-    enum StanZamowienia
+    public enum StanZamowienia
     {
         Nowe,
         Zrealizowane

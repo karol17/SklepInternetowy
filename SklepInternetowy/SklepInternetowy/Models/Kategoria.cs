@@ -6,7 +6,7 @@ using System.Text;
 
 namespace SklepInternetowy.Models
 {
-    class Kategoria
+   public class Kategoria
     {
         public int KategoriaId { get; set; }
         [Required(ErrorMessage="Wprowadź nazwę kategorii")]

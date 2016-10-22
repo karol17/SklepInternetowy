@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SklepInternetowy.Models
 {
-    class PozycjaZamowienia
+    public class PozycjaZamowienia
     {
         public int PozycjaZamowieniaId { get; set; }
         public int ZamowieniaId { get; set; }

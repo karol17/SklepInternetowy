@@ -24,6 +24,6 @@ namespace SklepInternetowy.Models
         public bool Bestseller { get; set; }
         public bool Ukryty { get; set; }
 
-        public virtual Kategoria Kategoria { get; set; }
+        public virtual Kategoria kategoria { get; set; }
     }
 }
