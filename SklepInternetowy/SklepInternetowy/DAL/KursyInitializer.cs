@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
+using System.Data.Entity.Migrations;
 
 namespace SklepInternetowy.DAL
 {
@@ -31,7 +32,7 @@ namespace SklepInternetowy.DAL
                 
            
             };
-            kategorie.ForEach(k=>context.Kategorie.AddOrUpdate(k));
+            kategorie.ForEach(k => context.Kategorie.AddOrUpdate(k));
             context.SaveChanges();
 
             var kursy = new List<Kurs>
