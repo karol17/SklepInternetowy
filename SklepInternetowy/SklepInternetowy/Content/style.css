@@ -1,0 +1,59 @@
+*{
+	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body{
+	background-image:url(tlo.jpg);
+	font-size:100%
+	line-height: 1.2;
+}
+h1{
+	font-size: 1.6em;
+	color: darkgray;
+	text-align: center;
+}
+h1,h2,h3,h4,h5,h6,p{
+	padding:1%;
+}
+a{
+	text-decoration:none;
+}
+img{
+	width:100%;
+}
+#koszykHeaderLink{
+	text-align: right;
+}
+nav{
+	width:100%;
+	overflow:auto;
+}
+nav ul li{
+	width:100%;
+	float:left;
+}
+nav ul li a{
+	background-color: darkgray;
+	color: white;
+	display: block;
+	padding: 10px;
+	margin: 2px;
+	border: 1.5px solid darkslategray;
+	text-align: center;
+}
+@media screen and (min-width: 650px){
+	nav{
+		width:70%;
+		margin: 0% auto;
+		
+	}
+	nav ul li{
+		width: 25%;
+	}
+    .kursyTrzyKolumny{
+        width:25%;
+        float:left;
+    }
+}

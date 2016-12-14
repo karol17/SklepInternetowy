@@ -1,11 +1,13 @@
 ﻿<!doctype html>
 <html>
 <head>
-    <title></title>
-    <link href="reset.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/Content/reset.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
 </head>
-</head>
+
 <body>
     <header>
         <div style="overflow: hidden;">
@@ -15,13 +17,16 @@
             </a>
 
             <a id="indexHeaderLogo" href="link">
-                <img src="baner.jpg" class="center" />
+                
+                <img src="~/images/baner.jpg" />
             </a>
         </div>
     </header>
 
-
-    @RenderBody();
+    <div>
+        @RenderBody()
+    </div>
+    
 
     <footer>
         <nav>
@@ -40,6 +45,8 @@
             Copyright &copy; 2016 P.Kursy
         </div>
     </footer>
+
+    @RenderSection("scripts",required: false)
 
 </body>
 </html>
