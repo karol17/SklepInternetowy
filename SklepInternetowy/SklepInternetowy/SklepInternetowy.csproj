@@ -89,6 +89,10 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\asp-mvc.png" />
+    <Content Include="Content\images\asp-net-mvc-3.gif" />
+    <Content Include="Content\images\aspmvc.jpg" />
+    <Content Include="Content\images\punktor.jpg" />
     <Content Include="Content\reset.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
