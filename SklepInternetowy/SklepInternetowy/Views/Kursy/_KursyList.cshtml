@@ -1,0 +1,30 @@
+﻿@model IEnumerable<SklepInternetowy.Models.Kurs>
+@using SklepInternetowy.Infrastructure
+
+<ul>
+    @foreach (var kurs in Model)
+    {
+        <li>
+            <article>
+                <a class="dodajDoKoszykaLink" href="@Url.Action("DodajDoKoszyka","Koszyk",new { id = kurs.KursId })">
+
+                    <img src="~/Content/images/punktor.jpg" />
+                </a>
+                @if (kurs.Bestseller)
+                {
+                    <div class=" bestselleflag">
+
+                    </div>
+
+                }
+
+                <a class="kursySzczegolyLink" href="@Url.Action("Szczegoly","Kursy",new { id = kurs.KursId })">
+                    <img class="kurs" src="@Url.ObrazkiSciezka(kurs.NazwaPlikuObrazka)" />
+                    <h1>
+                        @kurs.AutorKusrsu-@kurs.NazwaKursu
+                    </h1>
+                </a>
+            </article>
+        </li>
+    }
+</ul>

@@ -153,6 +153,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Views\Kursy\List.cshtml" />
     <Content Include="Views\Koszyk\DodajDoKoszyka.cshtml" />
+    <Content Include="Views\Kursy\_KategorieMenu.cshtml" />
+    <Content Include="Views\Kursy\_KursyList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
