@@ -1,0 +1,45 @@
+﻿
+
+@model SklepInternetowy.Models.Kurs
+@using SklepInternetowy.Infrastructure
+@{
+    ViewBag.Title = "Szczegoly";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="ListaKategoriZawartosc">
+    @Html.Action("KategorieMenu")
+    <div id="KategorieListPrawaSekcja">
+        <div id="Breadcrumb">
+            <a href="link">
+                Start > ASP.NET
+            </a>
+        </div>
+        <section id="SekcjaKurs">
+            <div id="KursLewa">
+                <img src="@Url.ObrazkiSciezka(Model.NazwaPlikuObrazka)" />
+            </div>
+            <div id="KursPrawa">
+                <div id="KursNazwa">
+                    <h1>
+                        @Model.NazwaKursu
+                    </h1>
+                    <h2>
+                        @Model.AutorKusrsu
+                    </h2>
+                </div>
+                <div id="KursCena">
+                    @string.Format("{0.0.##", Model.CenaKursu)<span>PLN</span>
+                </div>
+                <div id="KursOpis">
+                    @Model.OpisKursu
+                </div>
+                <div id="KursInfo">
+                    @Model.OpisSkrucony
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+

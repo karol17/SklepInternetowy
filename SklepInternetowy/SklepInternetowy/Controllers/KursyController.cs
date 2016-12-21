@@ -23,7 +23,8 @@ namespace SklepInternetowy.Controllers
         }
         public ActionResult Szczegoly(string id)
         {
-            return View();
+            var kurs = db.Kursy.Find(id);
+            return View(kurs);
         }
         [ChildActionOnly]
         public ActionResult KategorieMenu()
